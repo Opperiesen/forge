@@ -1,0 +1,18 @@
+# Build outputs
+/bin/
+/dist/
+/forge
+/forged
+*.test
+*.out
+coverage.txt
+
+# Local state and configuration
+.env
+.forge/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,41 @@
+name: Bug report
+description: Report reproducible behavior that violates the documented contract.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not disclose vulnerabilities here; use private vulnerability reporting.
+  - type: input
+    id: revision
+    attributes:
+      label: Forge revision
+      description: Release, tag, or commit ID.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
+      description: Include a minimal sanitized manifest and exact commands.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Linux distribution, architecture, runtime, and relevant versions.
+    validations:
+      required: true
