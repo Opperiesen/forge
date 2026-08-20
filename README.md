@@ -76,6 +76,8 @@ does not promise atomic rollback where the host runtime cannot provide it.
 - [`docs/VISION.md`](docs/VISION.md) — users, problem, principles, and success.
 - [`docs/MVP.md`](docs/MVP.md) — exact lifecycle, failure behavior, and acceptance.
 - [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) — component and state boundaries.
+- [`docs/ROADMAP.md`](docs/ROADMAP.md) — ordered milestones, dependencies, and
+  reproducible exit gates.
 - [`docs/adr/`](docs/adr/) — decisions that must remain explainable.
 - [`SECURITY.md`](SECURITY.md) — trust boundaries and vulnerability reporting.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — scope and engineering workflow.
