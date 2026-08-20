@@ -79,6 +79,7 @@ does not promise atomic rollback where the host runtime cannot provide it.
 - [`docs/adr/`](docs/adr/) — decisions that must remain explainable.
 - [`SECURITY.md`](SECURITY.md) — trust boundaries and vulnerability reporting.
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — scope and engineering workflow.
+- [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) — expected community behavior.
 
 ## Development
 
@@ -88,6 +89,7 @@ Forge requires Go 1.26 or newer.
 go test ./...
 go vet ./...
 go build ./cmd/forge
+go run ./tools/repolint
 go run ./cmd/forge version
 ```
 

@@ -32,6 +32,7 @@ test -z "$(gofmt -l .)"
 go vet ./...
 go test -race ./...
 go build ./cmd/forge
+go run ./tools/repolint
 ```
 
 Runtime integration must eventually run on Linux against the reference adapter;
