@@ -21,6 +21,7 @@ test -z "$(gofmt -l .)"
 go vet ./...
 go test -race ./...
 go build ./cmd/forge
+go run ./tools/repolint
 ```
 
 ## Change rules
@@ -41,5 +42,11 @@ Open an issue before implementing a substantial change so its fit with the MVP
 can be established. A pull request should explain the problem, chosen approach,
 tests, failure behavior, and documentation impact. Keep commits focused and do
 not add generated-by or co-author trailers.
+
+The `main` branch accepts changes only through a green pull request. Pull request
+titles become squash commit subjects and should use `type: summary`, where type
+is one of `feat`, `fix`, `docs`, `test`, `refactor`, `build`, `ci`, or `chore`.
+
+Participation is governed by [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
 
 By contributing, you agree that your contribution is licensed under Apache-2.0.

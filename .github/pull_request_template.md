@@ -12,6 +12,7 @@
 
 ## Documentation and security
 
+- [ ] `go run ./tools/repolint` passes.
 - [ ] MVP and architecture documentation remain accurate.
 - [ ] An ADR was added or superseded if a durable decision changed.
 - [ ] Security boundaries and secret handling were reviewed.
