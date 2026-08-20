@@ -122,6 +122,9 @@ func checkText(path string, content []byte) []string {
 	if len(content) > 0 && content[len(content)-1] != '\n' {
 		errors = append(errors, fmt.Sprintf("%s: missing final newline", path))
 	}
+	if len(content) > 1 && content[len(content)-1] == '\n' && content[len(content)-2] == '\n' {
+		errors = append(errors, fmt.Sprintf("%s: blank line at end of file", path))
+	}
 
 	scanner := bufio.NewScanner(strings.NewReader(string(content)))
 	line := 0

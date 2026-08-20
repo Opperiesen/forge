@@ -53,4 +53,8 @@ func TestCheckText(t *testing.T) {
 	if len(errors) != 3 {
 		t.Fatalf("checkText() returned %v, want CRLF, trailing whitespace, and final newline errors", errors)
 	}
+
+	if errors := checkText("blank.md", []byte("content\n\n")); len(errors) != 1 {
+		t.Fatalf("checkText() returned %v, want one blank EOF error", errors)
+	}
 }
