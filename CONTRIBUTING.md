@@ -39,13 +39,18 @@ go run ./tools/repolint
 ## Issues and pull requests
 
 Open an issue before implementing a substantial change so its fit with the MVP
-can be established. A pull request should explain the problem, chosen approach,
-tests, failure behavior, and documentation impact. Keep commits focused and do
-not add generated-by or co-author trailers.
+can be established. Work from the active milestone in
+[`docs/ROADMAP.md`](docs/ROADMAP.md), select an unblocked issue, and keep one
+implementation issue in progress whenever practical. A pull request should link
+that issue and explain the problem, chosen approach, tests, failure behavior, and
+documentation impact. Keep commits focused and do not add generated-by or
+co-author trailers.
 
 The `main` branch accepts changes only through a green pull request. Pull request
 titles become squash commit subjects and should use `type: summary`, where type
 is one of `feat`, `fix`, `docs`, `test`, `refactor`, `build`, `ci`, or `chore`.
+Open substantial work as a draft, then mark it ready only after its acceptance
+criteria and all local checks pass.
 
 Participation is governed by [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
 

@@ -34,6 +34,7 @@ var requiredPaths = []string{
 	"SECURITY.md",
 	"docs/ARCHITECTURE.md",
 	"docs/MVP.md",
+	"docs/ROADMAP.md",
 	"docs/VISION.md",
 	"go.mod",
 }
