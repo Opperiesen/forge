@@ -46,7 +46,6 @@ not add generated-by or co-author trailers.
 The `main` branch accepts changes only through a green pull request. Pull request
 titles become squash commit subjects and should use `type: summary`, where type
 is one of `feat`, `fix`, `docs`, `test`, `refactor`, `build`, `ci`, or `chore`.
-Commits and release tags merged into `main` must carry a verified signature.
 
 Participation is governed by [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
 
